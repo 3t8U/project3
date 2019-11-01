@@ -5,7 +5,7 @@ $(document).ready(function(){
     event.preventDefault();
 
     var digit = $ .parseInt(("input#userInput")).val();
-    var array = []
+    var array = [];
 
 
 
