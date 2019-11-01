@@ -4,8 +4,8 @@ $(document).ready(function(){
   $("form#input").submit(function(event) {
     event.preventDefault();
 
-    var digit = $("input#userInput").val();
-
+    var digit = $ .parseInt(("input#userInput")).val();
+    var array = []
 
 
 
@@ -16,8 +16,8 @@ $(document).ready(function(){
     var robotSpeak = function(digit){
       for (var index = 0; index < robotSpeak.length; index++) {
         console.log();
-      });
-    });
+      }
+    };
 
     var result = robotSpeak(function())
 

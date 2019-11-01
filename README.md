@@ -26,6 +26,18 @@ _An application that converts user inputted numbers into robot speak_
   * _Input = 3
   * _Output = "I'm sorry Dave, I'm afraid I can't do that"_
 
+* _The program replaces the number "32" with "I'm sorry Dave, I'm afraid I can't do that"_
+  * _Input = 32_
+  * _Output = "I'm sorry Dave, I'm afraid I can't do that"_
+
+* _The program replaces the number 21 with the word "Boop"_
+  * _Input = 21_
+  * _Output = "Boop"
+
+* _The program replaces the number 13 with the phrase "I'm sorry Dave, I'm afraid I can't do that"_
+  * _Input = 13_
+  * _Output = "I'm sorry Dave, I'm afraid I can't do that"_
+
 
 ## Setup/Installation Requirements
 
