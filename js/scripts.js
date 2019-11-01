@@ -5,8 +5,11 @@ $(document).ready(function(){
 
     var digit = $("input#userInput").val();
     var array = [];
-    array.push ;
+    array.push() ;
     for(var index = 0; index <= digit; index++)
+    var digitArray = function()
+
+
 
     //Business End Logic
 
