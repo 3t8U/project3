@@ -17,8 +17,8 @@ $(document).ready(function(){
       return inputExpand;
     }
 
-    var array = digitExpand(digit);
-console.log(array);
+    var digitArray = digitExpand(digit);
+
 
     //Business End Logic
 
@@ -28,25 +28,25 @@ console.log(array);
 
 
 
-    var robotSpeak = function(digit){
+    var robotSpeak = function(digitArray){
       var robotTalk = ""
-      for(var index = 0; index <= digit; index++) {
-        if (index === 1) {
-          robotTalk = (robotTalk + ", Beep")
-        } else if (index === 2){
-          robotTalk = (robotTalk + ", Boop")
-        } else if (index === 3) {
-          robotTalk = (robotTalk + ", I'm sorry Dave, I'm afraid I can't do that")
-        } else if (index === 0){
-          robotTalk = (robotTalk + index)
-        } else {
-          robotTalk = robotTalk.concat(",", index);
+      for(var index = 0; index <= digitArray.length; index++) {
+        if (digitArray[index] === 1){
+          digitArray[index] = "Beep"
+        } else if (digitArray[index] === 2) {
+          digitArray[index] = "Boop"
+        } else if (digitArray[index] === 3){
+          digitArray[index] = "I'm sorry Dave, I'm afraid I can't do that"
+
+
         }
+
       };
-      return robotTalk;
+      console.log(digitArray);
+      return digitArray.join(',');
     };
 
-    var result = robotSpeak(digit);
+    var result = robotSpeak(digitArray);
 
     $('#result').text(result);
     $("#result").show();
