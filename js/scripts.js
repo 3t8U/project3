@@ -5,9 +5,16 @@ $(document).ready(function(){
 
     var digit = $("input#userInput").val();
     var array = [];
-
+    array.push ;
+    for(var index = 0; index <= digit; index++)
 
     //Business End Logic
+
+
+
+
+
+
 
     var robotSpeak = function(digit){
       var robotTalk = ""
@@ -20,12 +27,12 @@ $(document).ready(function(){
           robotTalk = (robotTalk + ", I'm sorry Dave, I'm afraid I can't do that")
         } else if (index === 0){
           robotTalk = (robotTalk + index)
-        } else
+        } else {
         robotTalk = robotTalk.concat(",", index);
         }
-      }
+};
       return robotTalk;
-    });
+    };
 
     var result = robotSpeak(digit);
 
