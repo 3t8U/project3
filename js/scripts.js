@@ -1,15 +1,24 @@
 //User End Logic
+
 $(document).ready(function(){
   $("form#input").submit(function(event) {
     event.preventDefault();
-
     var digit = $("input#userInput").val();
-    var array = [];
-    array.push() ;
-    for(var index = 0; index <= digit; index++)
-    var digitArray = function()
 
 
+    var digitExpand = function(digitEnd){
+
+      var inputExpand = []
+      for(var index = 0; index <= digitEnd; index++){
+        console.log("tetx");
+      inputExpand.push(index) ;
+
+      }
+      return inputExpand;
+    }
+
+    var array = digitExpand(digit);
+console.log(array);
 
     //Business End Logic
 
@@ -31,9 +40,9 @@ $(document).ready(function(){
         } else if (index === 0){
           robotTalk = (robotTalk + index)
         } else {
-        robotTalk = robotTalk.concat(",", index);
+          robotTalk = robotTalk.concat(",", index);
         }
-};
+      };
       return robotTalk;
     };
 
