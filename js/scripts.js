@@ -1,5 +1,4 @@
 //User End Logic
-
 $(document).ready(function(){
   $("form#input").submit(function(event) {
     event.preventDefault();
@@ -11,7 +10,7 @@ $(document).ready(function(){
       var inputExpand = []
       for(var index = 0; index <= digitEnd; index++){
         console.log("tetx");
-      inputExpand.push(index) ;
+        inputExpand.push(index) ;
 
       }
       return inputExpand;
