@@ -13,19 +13,19 @@ $(document).ready(function(){
 
     //Business End Logic
 
-    var robotSpeak = function(digit){
-      var robotTalk = ""
+        var robotSpeak = function(digit){
+          var robotTalk = ""
       for(var index = 0; index <= digit; index++) {
         robotTalk = robotTalk.concat(",", index);
 console.log(robotTalk);
-      }
-      return robotTalk;
-    };
+}
+return robotTalk;
+};
 
-    var result = robotSpeak(digit);
+var result = robotSpeak(digit);
 
-    $('#result').text(result);
-    $("#result").show();
+$('#result').text(result);
+$("#result").show();
 
 
   });
