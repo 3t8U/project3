@@ -14,11 +14,12 @@ $(document).ready(function(){
     //Business End Logic
 
     var robotSpeak = function(digit){
-    var robotTalk = ""
-    for(var index = 0; index < robotSpeak.length; index++) {
-    robotTalk .concat(",", digit);
-    robotTalk = robotTalk.concat;
+      var robotTalk = ""
+      for(var index = 0; index <= digit; index++) {
+        robotTalk = robotTalk.concat(",", index);
+console.log(robotTalk);
       }
+      return robotTalk;
     };
 
     var result = robotSpeak(digit);
