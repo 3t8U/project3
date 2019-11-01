@@ -16,19 +16,19 @@ _An application that converts user inputted numbers into robot speak_
 
 * _The program replaces all "1"s with the word "Beep"_
   * _Input = 1_
-  * _Output = "beep"_
+  * _Output = 0, beep_
 
 * _The program replaces all "2"s with the word "Boop"_
   * _Input = 2_
-  * _Output = "boop"
+  * _Output = 0, Beep, boop
 
 * _The program replaces all "3"s with the phrase "I'm sorry Dave, I'm afraid I can't do that"_
   * _Input = 3
-  * _Output = "I'm sorry Dave, I'm afraid I can't do that"_
+  * _Output = 0, Beep, Boop, I'm sorry Dave, I'm afraid I can't do that_
 
-* _The program replaces the number "32" with "I'm sorry Dave, I'm afraid I can't do that"_
+* _The program replaces the number 32 with "I'm sorry Dave, I'm afraid I can't do that"_
   * _Input = 32_
-  * _Output = "I'm sorry Dave, I'm afraid I can't do that"_
+  * _Output = I'm sorry Dave, I'm afraid I can't do that_
 
 * _The program replaces the number 21 with the word "Boop"_
   * _Input = 21_
