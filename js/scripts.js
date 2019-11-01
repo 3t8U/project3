@@ -4,7 +4,7 @@ $(document).ready(function(){
   $("form#input").submit(function(event) {
     event.preventDefault();
 
-    var digit = $ .parseInt(("input#userInput")).val();
+    var digit = $("input#userInput").val();
     var array = [];
 
 
@@ -14,12 +14,14 @@ $(document).ready(function(){
     //Business End Logic
 
     var robotSpeak = function(digit){
-      for (var index = 0; index < robotSpeak.length; index++) {
-        console.log();
+    var robotTalk = ""
+    for(var index = 0; index < robotSpeak.length; index++) {
+    robotTalk .concat(",", digit);
+    robotTalk = robotTalk.concat;
       }
     };
 
-    var result = robotSpeak(function())
+    var result = robotSpeak(digit);
 
     $('#result').text(result);
     $("#result").show();
